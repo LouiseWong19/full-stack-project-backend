@@ -25,8 +25,7 @@ public class AnimalController {
     }
 //    @GetMapping("/animals")
 //    public List<String> getAnimals(){
-//        return animals;
-//    }
+//        return animals; }
     @PostMapping("/animal")
     public ResponseEntity<String> createAnimal(@RequestBody Animal animal){
         repository.save(animal);
